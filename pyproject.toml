@@ -450,6 +450,7 @@ addopts = [
     "--verbosity=2",
     "-p", "no:flaky",
     "-p", "no:nose",
+    "-p", "no:legacypath",
     "--asyncio-mode=strict",
     "--import-mode=importlib",
 ]
