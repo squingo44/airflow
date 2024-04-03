@@ -377,7 +377,7 @@ def generate_args_for_pytest(
             # For regular tests, we distribute test into the worker by their containing file
             # It should reduce different side effects,
             # if the state of environment could be changed between tests.
-            args.extend(["--dist", "loadgroup"])
+            args.extend(["--dist", "loadfile"])
         else:
             # For helm tests setup distribution for "steal" tests which queued into the lon running queue.
             args.extend(["--dist", "worksteal"])
